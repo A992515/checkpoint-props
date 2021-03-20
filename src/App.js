@@ -1,25 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React from "react";
+import Profile from "./profile/ProfileComponent.jsx";
+const alertMyInput = () => {
+  alert('my name is Ahlem');
 }
-
+const  App = () => { 
+  return(
+  <div>
+  <Profile name= "AHMED Ahlem" bio= "Im a web devoloper" pro ="Web devoloper" alertMyInput = {alertMyInput}>
+   <img src="https://i.pinimg.com/736x/3a/e6/62/3ae6620e91e2a72f900dd1d67e981281.jpg" alt="logo"/>   
+  </Profile>
+  </div>
+  );
+  
+}
 export default App;
