@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from "prop-types";
 
 function Profile(props) {
@@ -6,10 +6,10 @@ function Profile(props) {
     <div className="App">
         {props.children}
     <h1>{props.name}</h1>
-    <h2>{props.bio}</h2>
+    <h4>{props.bio}</h4>
     <h2>{props.pro}</h2>
-    <button onClick={() => props.alertMyInput()}>
-     ClickMe
+    <button onClick={() => props.handleName()}>
+     sign in 
    </button>
     </div>)
    }
